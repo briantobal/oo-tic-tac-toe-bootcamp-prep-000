@@ -119,45 +119,45 @@ def display_board
       win_index << 8    
         return win_index    
         
-    elsif board[0] == "X" and board[4] == "X" and board[8] == "X"
+    elsif @board[0] == "X" and @board[4] == "X" and @board[8] == "X"
       win_index << 0
       win_index << 4
       win_index << 8    
         return win_index
-    elsif board[0] == "O" and board[4] == "O" and board[8] == "O"
+    elsif @board[0] == "O" and @board[4] == "O" and @board[8] == "O"
       win_index << 0
       win_index << 4
       win_index << 8    
         return win_index     
         
-    elsif board[6] == "X" and board[4] == "X" and board[2] == "X"
+    elsif @board[6] == "X" and @board[4] == "X" and @board[2] == "X"
       win_index << 6
       win_index << 4
       win_index << 2    
         return win_index
-     elsif board[6] == "O" and board[4] == "O" and board[2] == "O"
+     elsif @board[6] == "O" and @board[4] == "O" and @board[2] == "O"
       win_index << 6
       win_index << 4
       win_index << 2    
         return win_index     
         
-    elsif board[0] == "O" and board[3] == "O" and board[6] == "O"
+    elsif @board[0] == "O" and @board[3] == "O" and @board[6] == "O"
       win_index << 0
       win_index << 3
       win_index << 6    
         return win_index
-    elsif board[0] == "X" and board[3] == "X" and board[6] == "X"
+    elsif @board[0] == "X" and @board[3] == "X" and @board[6] == "X"
       win_index << 0
       win_index << 3
       win_index << 6    
         return win_index     
         
-    elsif board[1] == "X" and board[4] == "X" and board[7] == "X"
+    elsif @board[1] == "X" and @board[4] == "X" and @board[7] == "X"
       win_index << 1
       win_index << 4
       win_index << 7    
         return win_index     
-    elsif board[1] == "O" and board[4] == "O" and board[7] == "O"
+    elsif @board[1] == "O" and @board[4] == "O" and @board[7] == "O"
       win_index << 1
       win_index << 4
       win_index << 7    
