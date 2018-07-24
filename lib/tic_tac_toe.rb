@@ -163,18 +163,18 @@ def display_board
       win_index << 7    
         return win_index
    
-    elsif board[2] == "X" and board[5] == "X" and board[8] == "X"
+    elsif @board[2] == "X" and @board[5] == "X" and @board[8] == "X"
       win_index << 2
       win_index << 5
       win_index << 8    
         return win_index     
-    elsif board[2] == "O" and board[5] == "O" and board[8] == "O"
+    elsif @board[2] == "O" and @board[5] == "O" and @board[8] == "O"
       win_index << 2
       win_index << 5
       win_index << 8    
         return win_index
         
-    elsif board[2] == "X" and board[4] == "X" and board[6] == "X"
+    elsif @board[2] == "X" and board[4] == "X" and board[6] == "X"
       win_index << 2
       win_index << 4
       win_index << 6    
