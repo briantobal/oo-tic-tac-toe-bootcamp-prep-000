@@ -11,4 +11,6 @@ class TicTacToe
     @TicTacToe
   end 
   
+  TicTacToe
+  
 end 
