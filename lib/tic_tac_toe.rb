@@ -61,9 +61,9 @@ def display_board
     puts "Please enter 1-9:"
     user_input = gets.strip
     user_input = input_to_index(user_input)
-    if valid_move?(board, user_input)
-      move(board, user_input, current_player(board))
-      puts display_board(board)
+    if valid_move?(user_input)
+      move(user_input, current_player)
+      display_board
     else
       puts "That is an invalid entry!"
       turn(board)
@@ -74,9 +74,6 @@ def turn
     puts "It's #{current_player}'s turn."
     puts "Please enter 1-9:"
     input = gets.strip
-    if input == "exit"
-      over?("exit")
-    end
     index = input_to_index(input)
     if valid_move?(index)
       move(index, current_player)
