@@ -52,7 +52,9 @@ def display_board
     index.between?(0,8) && !position_taken?(board, index)
   end
   
-  
+  #def valid_move?(index)
+   # return !position_taken?(index) && index > 0 && index < 9
+ # end
 
   def turn(board)
     puts "Please enter 1-9:"
