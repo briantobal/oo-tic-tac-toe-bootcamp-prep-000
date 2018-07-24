@@ -66,7 +66,7 @@ def display_board
       display_board
     else
       puts "That is an invalid entry!"
-      turn(board)
+      turn
     end
   end
 
