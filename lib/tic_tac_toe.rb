@@ -1,7 +1,7 @@
 class TicTacToe
   
-  def initialize(name)
-    @name = name
+  def initialize(TicTacToe)
+    @TicTacToe = TicTacToe
   end
   
   def initialize (board = nil)
