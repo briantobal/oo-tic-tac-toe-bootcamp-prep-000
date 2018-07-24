@@ -10,4 +10,8 @@ class TicTacToe
   def TicTacToe
     @TicTacToe
   end 
+  
+  def TicTacToe(name)
+    @TicTacToe = name
+  end
 end 
