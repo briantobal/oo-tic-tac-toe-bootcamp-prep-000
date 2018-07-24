@@ -57,7 +57,7 @@ def display_board
  # end
 
   def turn
-    puts "It's #{current_player}'s turn."
+    # puts "It's #{current_player}'s turn."
     puts "Please enter 1-9:"
     user_input = gets.strip
     user_input = input_to_index(user_input)
