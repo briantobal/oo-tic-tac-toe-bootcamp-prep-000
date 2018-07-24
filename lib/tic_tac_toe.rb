@@ -213,12 +213,7 @@ def display_board
   end 
   
   def current_player 
-    turn=turn_count
-    if turn.to_i.even?
-      return "X"
-    else 
-      return "O"
-    end 
+    turn_count % 2 == 0 ? "X" : "O"
   end
   
   
