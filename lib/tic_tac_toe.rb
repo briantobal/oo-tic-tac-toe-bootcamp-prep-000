@@ -174,12 +174,12 @@ def display_board
       win_index << 8    
         return win_index
         
-    elsif @board[2] == "X" and board[4] == "X" and board[6] == "X"
+    elsif @board[2] == "X" and @board[4] == "X" and @board[6] == "X"
       win_index << 2
       win_index << 4
       win_index << 6    
         return win_index    
-    elsif board[2] == "O" and board[4] == "O" and board[6] == "O"
+    elsif @board[2] == "O" and @board[4] == "O" and @board[6] == "O"
       win_index << 2
       win_index << 4
       win_index << 6    
@@ -189,12 +189,12 @@ def display_board
     end
   end
   
-  def full?(board)
-    board.all? {|i| i != " "}
+  def full?
+    @board.all? {|i| i != " "}
   end 
   
-  def draw?(board)
-    full?(board) && !won?(board)
+  def draw?
+    full?(@board) && !won?(@board)
   end 
   
   def over?(board)
