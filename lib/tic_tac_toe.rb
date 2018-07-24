@@ -56,7 +56,8 @@ def display_board
    # return !position_taken?(index) && index > 0 && index < 9
  # end
 
-  def turn(board)
+  def turn
+    puts "It's #{current_player}'s turn."
     puts "Please enter 1-9:"
     user_input = gets.strip
     user_input = input_to_index(user_input)
@@ -69,7 +70,21 @@ def display_board
     end
   end
 
-
+def turn
+    puts "It's #{current_player}'s turn."
+    puts "Please enter 1-9:"
+    input = gets.strip
+    if input == "exit"
+      over?("exit")
+    end
+    index = input_to_index(input)
+    if valid_move?(index)
+      move(index, current_player)
+      display_board
+    else
+      turn
+    end
+  end
 
 
   def turn_count (board)
