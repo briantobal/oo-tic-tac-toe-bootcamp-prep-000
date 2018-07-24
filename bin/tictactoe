@@ -7,10 +7,6 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
   
-  def TicTacToe
-    @TicTacToe
-  end 
-  
-  TicTacToe
+
   
 end 
