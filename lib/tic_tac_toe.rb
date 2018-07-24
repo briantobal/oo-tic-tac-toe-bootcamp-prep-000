@@ -197,23 +197,23 @@ def display_board
     !won? && full?
   end 
   
-  def over?(board)
-    return true if draw?(board)
-    return true if won?(board) && full?(board)
-    return true if won?(board) && !full?(board)
+  def over?
+    return true if draw?
+    return true if won? && full?
+    return true if won? && !full?
     return false
   end
   
-  def winner(board)
-    if won?(board) && won?(board).any?{|i| board[i] == "X"}
+  def winner
+    if won? && won?.any?{|i| @board[i] == "X"}
       return "X"
-    elsif won?(board) && won?(board).any?{|i| board[i] == "O"}
+    elsif won? && won?.any?{|i| @board[i] == "O"}
       return "O"
     end 
   end 
   
-  def current_player (board)
-    turn=turn_count(board)
+  def current_player 
+    turn=turn_count
     if turn.to_i.even?
       return "X"
     else 
