@@ -70,19 +70,6 @@ def display_board
     end
   end
 
-def turn
-    puts "It's #{current_player}'s turn."
-    puts "Please enter 1-9:"
-    input = gets.strip
-    index = input_to_index(input)
-    if valid_move?(index)
-      move(index, current_player)
-      display_board
-    else
-      turn
-    end
-  end
-
 
   def turn_count (board)
     turn = 0
@@ -93,6 +80,7 @@ def turn
     end
     turn
   end 
+
   
   def won?(board)
     win_index = Array.new
