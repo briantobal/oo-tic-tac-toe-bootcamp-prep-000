@@ -194,7 +194,7 @@ def display_board
   end 
   
   def draw?
-    full?(@board) && !won?(@board)
+    !won? && full?
   end 
   
   def over?(board)
